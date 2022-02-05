@@ -8,7 +8,7 @@ exports.createPages = async ({ actions }) => {
   })
 }
 
-exports.onCreatePage = async ({ page, actions }) => {
+/*exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions
   page.matchPath = page.path
 
@@ -19,4 +19,4 @@ exports.onCreatePage = async ({ page, actions }) => {
       component: page.component,
     })
   }
-}
+}*/

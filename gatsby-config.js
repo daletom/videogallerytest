@@ -3,7 +3,7 @@ module.exports = {
     title: `imgix Video on Gatsby`,
     description: `Test project to use imgix video HLS players on Gatsby.`,
     author: `@letsgoheadless`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://videogallerytestmaster.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
