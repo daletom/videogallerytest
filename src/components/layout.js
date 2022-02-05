@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
         >
         Find the GH Repo here:
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://github.com/daletom/videogallerytest">videogallerytest</a>
         </footer>
       </div>
     </>
