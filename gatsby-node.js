@@ -7,3 +7,16 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  page.matchPath = page.path
+
+  if (page.path.match(video)) {
+    await createPage({
+      path: '/video',
+      matchPath: '/video/:videoId',
+      component: page.component,
+    })
+  }
+}

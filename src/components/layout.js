@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+        Find the GH Repo here:
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
