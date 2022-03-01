@@ -9,10 +9,11 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div>
-      <div>
-        <h1>Building Video Galleries with Gatsby</h1>
-        <p>At one time or another, we have all seen the "building an image gallery with Gatsby tutorial." Well, it's time to up your game and build a video gallery tutorial!! In this workshop, you will learn how to create video gallery pages with Gatsby using all three of these modern video solutions — Strap in for an amazing workshop!</p>
+    <div id="outer">
+      <div id="outro">
+      <div id="hometext">
+        <h1 id="homeheader">Building Video Galleries with Gatsby</h1>
+        <p id="homeparagraph">At one time or another, we have all seen the "building an image gallery with Gatsby tutorial." Well, it's time to up your game and build a video gallery tutorial!! In this workshop, you will learn how to create video gallery pages with Gatsby using all three of these modern video solutions — Strap in for an amazing workshop!</p>
       </div>
       <ul role="list">
         <li>
@@ -31,6 +32,7 @@ const IndexPage = () => (
           </Link>
         </li>
       </ul>
+      </div>
     </div>
   </Layout>
 )
