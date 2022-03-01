@@ -1,7 +1,7 @@
 #outer {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -19,8 +19,8 @@
   #outer {
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 6rem;
-  padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -78,4 +78,61 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: rgb(107 114 128);
+}
+
+#homelist {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 640px) {
+  #homelist {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #homelist {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+}
+
+#outerlist {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#outerimglist {
+  aspect-ratio: 3 / 2;
+}
+
+#imglist {
+  object-fit: cover;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+#outerheaderlist {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#innerheaderlist {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#linkparagraph {
+  color: rgb(79 70 229);
 }
