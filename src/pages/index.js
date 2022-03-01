@@ -45,6 +45,18 @@ const IndexPage = () => (
                 id={"gotopening"}
               />
         </div>
+        <div
+          style={{
+            margin: '10px'
+          }}
+        >
+            <VideoPlayerJS
+                autoplay={false}
+                width={"640px"}
+                height={"360px"}
+                id={"disney_zeek_dance2"}
+              />
+        </div>
     </div>
   </Layout>
 )
