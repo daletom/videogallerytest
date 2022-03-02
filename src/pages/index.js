@@ -17,7 +17,7 @@ const IndexPage = () => (
       </div>
       <ul role="list" id="homelist">
         <li>
-          <Link to="/video">
+          <Link to="/youtube">
             <div id="outerlist">
               <div id="outerimglist">
                 <img
@@ -26,7 +26,7 @@ const IndexPage = () => (
               </div>
               <div id="outerheaderlist">
                 <div id="innerheaderlist">
-                  <h3>Youtube</h3>
+                  <h3 id="linkheader">Youtube</h3>
                   <p id="linkparagraph">Simple way to use an iframe to embed Youtube Videos on your Gatsby site.</p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <Link to="/video">
+          <Link to="/mp4">
             <div id="outerlist">
               <div id="outerimglist">
                 <img
@@ -43,8 +43,8 @@ const IndexPage = () => (
               </div>
               <div id="outerheaderlist">
                 <div id="innerheaderlist">
-                  <h3>MP4</h3>
-                  <p id="linkparagraph">Simple way to use an iframe to embed Youtube Videos on your Gatsby site.</p>
+                  <h3 id="linkheader">MP4</h3>
+                  <p id="linkparagraph">Simplest video format with wide support to serve in a video tag on your Gatsby site.</p>
                 </div>
               </div>
             </div>
@@ -60,8 +60,8 @@ const IndexPage = () => (
               </div>
               <div id="outerheaderlist">
                 <div id="innerheaderlist">
-                  <h3>HLS</h3>
-                  <p id="linkparagraph">Simple way to use an iframe to embed Youtube Videos on your Gatsby site.</p>
+                  <h3 id="linkheader">HLS</h3>
+                  <p id="linkparagraph">Most performant video format to serve on your Gatsby site. Will ensure video playback is never interrupted.</p>
                 </div>
               </div>
             </div>

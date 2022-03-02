@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react"
 import videojs from "video.js"
 import "./videojs.css"
 
-const generateVideoLink = id =>
-  `https://tom.imgix.video/${id}.mp4?fm=hls`
+const generateVideoLink = name =>
+  `https://tom.imgix.video/${name}.mp4?fm=hls`
 
-const usePlayer = ({ id, autoplay }) => {
+const usePlayer = ({ name, autoplay }) => {
   const options = {
     fill: true,
     fluid: true,
@@ -31,7 +31,7 @@ const usePlayer = ({ id, autoplay }) => {
       autoplay: autoplay,
       sources: [
         {
-          src: generateVideoLink(id),
+          src: generateVideoLink(name),
           type: "application/x-mpegURL",
         },
       ],
@@ -52,18 +52,18 @@ const usePlayer = ({ id, autoplay }) => {
     if (player !== null) {
       player.src([
         {
-          src: generateVideoLink(id),
+          src: generateVideoLink(name),
           type: "application/x-mpegURL",
         },
       ])
     }
-  }, [id])
+  }, [name])
 
   return videoRef
 }
 
-const VideoPlayerJS = ({ id, controls, autoplay, height, width }) => {
-  const playerRef = usePlayer({ id, controls, autoplay })
+const VideoPlayerJS = ({ name, controls, autoplay, height, width }) => {
+  const playerRef = usePlayer({ name, controls, autoplay })
 
   return (
     <div data-vjs-player style={{ height, width, position: "relative" }}>
