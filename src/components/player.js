@@ -62,15 +62,15 @@ const usePlayer = ({ name, autoplay }) => {
   return videoRef
 }
 
-const VideoPlayerJS = ({ name, controls, autoplay, height, width }) => {
-  const playerRef = usePlayer({ name, controls, autoplay })
+const VideoPlayerJS = ({ name, controls }) => {
+  const playerRef = usePlayer({ name, controls })
 
   return (
-    <div data-vjs-player style={{ height, width, position: "relative" }}>
+    <div data-vjs-player style={{ position: "relative" }}>
       <video
         ref={playerRef}
         className="video-js vjs-tech vjs-big-play-centered"
-        style={{ height, width, zIndex: 0 }}
+        style={{ zIndex: 0 }}
       />
     </div>
   )

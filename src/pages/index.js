@@ -51,7 +51,7 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <Link to="/video">
+          <Link to="/hls">
             <div id="outerlist">
               <div id="outerimglist">
                 <img

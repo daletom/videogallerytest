@@ -11,8 +11,7 @@ const HlsPage = () => (
     <div id="outer">
       <div id="outro">
     <div id="outeryoutube">
-    <VideoPlayerJS
-                autoplay={false}
+      <VideoPlayerJS
                 name={"HLSadvantages"}
                 id="youtube"
               />
